@@ -32,11 +32,12 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import com.shegs.profiledetails.R
 
 
 @Composable
-fun ProfileScreen() {
+fun ProfileScreen(navController: NavController) {
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -46,9 +47,11 @@ fun ProfileScreen() {
         Column {
             ProfileImage()
             ProfileName(profileName = "Oladokun Oluwasegun")
-            GithubButton(text = "Go to Github") {
-                
-            }
+            GithubButton(
+                text = "Go to Github",
+                onClick = {
+                    navController.navigate("githubScreen")
+                })
         }
     }
 }
@@ -118,10 +121,4 @@ fun GithubButton(
         )
     }
     
-}
-
-@Preview
-@Composable
-fun ProfilePreview() {
-    ProfileScreen ()
 }

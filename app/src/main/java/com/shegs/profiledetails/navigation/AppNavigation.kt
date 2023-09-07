@@ -14,7 +14,7 @@ fun AppNavigation() {
 
     NavHost(navController = navController, startDestination = "profileScreen"){
         composable("profileScreen"){
-            ProfileScreen()
+            ProfileScreen(navController)
         }
 
         composable("githubScreen"){

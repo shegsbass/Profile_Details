@@ -26,7 +26,7 @@ fun GithubWebViewScreen() {
     var isLoading by remember { mutableStateOf(true) }
 
     LaunchedEffect(url){
-        delay(3000)
+        delay(10000)
         isLoading = false
     }
 

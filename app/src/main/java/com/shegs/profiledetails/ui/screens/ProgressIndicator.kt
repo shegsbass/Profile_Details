@@ -102,7 +102,7 @@ fun ProgressIndicator(
     modifier: Modifier = Modifier
         .fillMaxSize()
         .padding(28.dp),
-    color: Color = MaterialTheme.colorScheme.primary,
+    color: Color = MaterialTheme.colorScheme.onBackground,
 ) {
 
     val state = rememberProgressState()
@@ -171,7 +171,7 @@ private fun Dot(
 fun ProgressIndicatorPreview() {
     ProgressIndicator(
         modifier = Modifier.fillMaxSize(),
-        color = MaterialTheme.colorScheme.primary // You can change the color
+        color = MaterialTheme.colorScheme.onBackground
     )
 }
 

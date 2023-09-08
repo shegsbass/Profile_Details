@@ -43,3 +43,7 @@ dependencies {
 ## Assumptions
 - This project assumes that you have a working Android development environment set up with Android Studio.
 - This project assumes that you are familiar with Jetpack Compose.
+
+## App Demo on Appetize
+
+https://appetize.io/app/wcgxv7pdwfp6tro6xgwgbxcl3a?device=pixel4&osVersion=11.0&scale=75
